@@ -618,6 +618,7 @@ padding: 1px 0 0 24px;
 }
 .btn{
     width: 100%;
+    height: 46px;
 }
 .col{
     padding-left: initial;
