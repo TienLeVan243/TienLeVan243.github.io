@@ -103,6 +103,7 @@ ntac lam viec
     display: inline-block;
     position: relative;
 }
+
 #nav > li > a
 {
         color:#fff;
@@ -119,13 +120,19 @@ ntac lam viec
 #nav li:hover .subnav{
     display: block;
 }
-#nav .subnav li:hover a,
-#nav>li:hover> a
+#nav>li:hover>a
 {
     color: #000;
     background-color: #ccc;
 
 }
+#nav .subnav li a:hover
+{
+    background-color: #ccc;
+    color: black;
+
+}
+
 #nav .subnav{
     display: none;
     position: absolute;
@@ -145,24 +152,38 @@ ntac lam viec
 #nav .nav-arrow-down{
     font-size: 14px;
 }
+#header .mobile-menu-btn,
 #header .search-btn
 {
     /* keo sang ben phai */
     float: right;
+    padding: 0 21px;
 
 }
+#header .menu-icon,
 #header .search-icon
 {
     font-size: 20px;
     color: #fff;
     line-height: 46px;
-    padding: 0 16px;  
+    padding right: 16px;;
 }
+#header .mobile-menu-btn:hover,
 #header .search-btn:hover
 {
     background-color: red;
     cursor: pointer;
 }
+#header .mobile-menu-btn:hover .menu-icon{
+    color: black;
+}
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+}
+#mobile-menu {
+    display: none;
+}
+
 #slider{
     position: relative;
     margin-top: 46px;
@@ -197,11 +218,15 @@ ntac lam viec
 #content{
 
 }
+
 #content .content-section{
     width: 800px;
+    max-width: 100%;
     padding: 64px 0px 112px;
     margin-left: auto;
     margin-right: auto; 
+    padding-left: 16px;
+    padding-right: 16px;
 
 }
 #content .section-heading
@@ -234,6 +259,7 @@ ntac lam viec
 {
     margin-top: 48px;
     margin-bottom: 48px;
+    /* display: flex; */
     /* display: flex;  căn giữa . thay cho lệnh float left với clear both */
 
 }
@@ -485,3 +511,104 @@ ntac lam viec
         opacity: 1;
     }
 }
+/* pc */
+/* breakpoint : diem chuyen tu giua cac thiet bi */
+/* @media (min-width :1024px){
+
+}
+/* tablet */
+/* @media(min-width :740px) adn (max-width: 1023px){
+
+} */ 
+/* mobile */
+@media(max-width: 740px){
+
+#nav{
+    display: block;
+
+}
+#nav > li{
+        display: block;
+}
+#header .search-btn{
+    display: none;
+}
+#mobile-menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+#mobile-menu{
+    display: block;
+}
+#nav li a
+{
+display: block;
+padding: 1px 0 0 24px;
+}
+#nav > li:first-child a{
+    display: inline-block;
+    padding-right: 24px;
+}
+#nav .subnav{
+    position: initial;
+    background-color: #333;
+}
+#nav .subnav a{
+    color: #fff;
+    padding: 5px 41px;
+
+}
+#header{
+    overflow: hidden;
+}
+#content .member-item .member-img
+{
+    width: 70%;
+
+}
+#content .member-name {
+    font-size: 18px;
+}
+#content .member-item {
+    width: 100%;
+    margin-top: 60px;
+}
+.mobile-add{
+    padding-bottom: 18px;
+}
+.contact-info{
+    width: 100%;
+}
+.row{
+    display: initial;
+}
+.form-control{
+    margin: 10px 0;
+}
+.contact-info{
+    padding: 20px 0px 0px 101px;
+
+}
+.about-text{
+}
+#slider .text-content{
+    bottom: 20px;
+}
+#slider .text-content .text-heading{
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+#slider .text-content .text-heading .text-description{
+    font-size: 13px;
+}    
+.modal-container{
+    margin: 0 10px;
+}
+}
+
+
+/* 
+PC: >=1024px
+tablet : >=700PX & <1024PX 
+mobile : <740px*/
