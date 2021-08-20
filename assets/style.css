@@ -616,6 +616,16 @@ padding: 1px 0 0 24px;
 #content .audio{
     width: 250px;
 }
+.btn{
+    width: 100%;
+}
+.col{
+    padding-left: initial;
+    padding-right: initial;
+}
+.col-half{
+    width: 100%;
+}
 }
 
 
