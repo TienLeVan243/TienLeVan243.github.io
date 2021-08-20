@@ -229,6 +229,14 @@ ntac lam viec
     padding-right: 16px;
 
 }
+#content .audio{
+    width: 160px;
+    height: 40px;
+    margin: 10px;
+}
+#content .title-music {
+    font-weight: 540;
+}
 #content .section-heading
 {
     font-size: 30px;
@@ -604,6 +612,9 @@ padding: 1px 0 0 24px;
 }    
 .modal-container{
     margin: 0 10px;
+}
+#content .audio{
+    width: 250px;
 }
 }
 
