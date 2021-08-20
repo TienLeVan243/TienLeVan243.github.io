@@ -619,6 +619,9 @@ padding: 1px 0 0 24px;
 .btn{
     width: 100%;
     height: 46px;
+    font-size :18px;
+    -webkit-appearance: none;
+
 }
 .col{
     padding-left: initial;
@@ -628,7 +631,7 @@ padding: 1px 0 0 24px;
     width: 100%;
 }
 #buy-tickets{
-font: size 20px;
+font-size: 18px;
 }
 }
 
